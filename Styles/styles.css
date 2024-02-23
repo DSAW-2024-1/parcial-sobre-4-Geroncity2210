@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'main-font';
+    src: url('./../assets/fonts/Roboto-Regular.ttf') format('truetype'); /* Ruta al archivo .ttf */
+    
+}
+@font-face {
+    font-family: 'font-Bold';
+    src: url(./../assets/fonts/Roboto-Bold.ttf) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'main-font';
+    font-size: 16px;
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    #btn_sub{
+        align-self: center;
+    }
+    
+}
+
+.banner-img{
+    width: 100%;
+    max-height: 50%;
+}
+
+.text_content{
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 2rem;
+}
+
+
+.success_msm{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content:space-between;
+    padding: 1.2rem;
+    .message{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+    #btn{
+        align-self: center;
+    }
+
+}
+
+.hide{
+    display: none;
+}
+ul{
+    list-style-image: url(./../assets/images/icon-list.svg);
+    padding-left: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    label{
+    }
+    input{
+        padding: 1rem 1.2rem;
+        border-radius: 5px;
+        border: 1px solid hsl(231, 7%, 60%);
+    }
+
+}
+button{
+    padding: 1rem 1.2rem;
+    background-color: rgb(35, 39, 66);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 95%;
+}
+button:hover{
+    background-image: linear-gradient(to left, rgb(255, 84, 120),rgb(255, 105, 62));
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'font-Bold';
+    font-size: 40px;
+}
+@media screen and (min-width:1024px)  {
+    .banner-img{
+        filter: url("./../assets/images/illustration-sign-up-desktop.svg");
+    }
+    body{
+        background-color: rgb(54, 56, 77);
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+    }
+
+    
+    .hide{display: none;}
+
+    .login{
+        flex-direction: row-reverse;
+        width: auto;
+        height: auto;
+        padding: 2rem;
+        border-radius: 30px;
+    }
+    .success_msm{
+        width: 40%;
+        gap: 1.2rem;
+        height: auto;
+        padding: 2rem;
+        border-radius: 30px;
+        span{font-weight: 600;}
+        
+
+    }
+    
+
+}
