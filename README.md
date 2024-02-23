@@ -1,4 +1,6 @@
 # Parcial Primer Corte
+## Link página: 
+https://dsaw-2024-1.github.io/parcial-sobre-4-Geroncity2210/
 
 ## HTML, CSS y JavaScript
 
